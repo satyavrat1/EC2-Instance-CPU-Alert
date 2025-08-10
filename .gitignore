@@ -1,0 +1,19 @@
+# OS & Editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Node
+node_modules/
+
+# Env
+.env
+.venv/
+
+# Credentials (DO NOT commit)
+credentials
+aws_credentials
