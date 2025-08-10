@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="220" viewBox="0 0 820 220">
+  <style>
+    .box { fill:#f7f9fb; stroke:#2b6cb0; stroke-width:2; rx:8; }
+    .label { font-family: Arial, sans-serif; font-size:13px; fill:#1a202c; }
+    .small { font-size:11px; fill:#2d3748; }
+    .arrow { stroke:#2b6cb0; stroke-width:2; marker-end: url(#arrowhead); fill:none; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2b6cb0" />
+    </marker>
+  </defs>
+
+  <rect x="20" y="60" width="160" height="60" class="box" />
+  <text x="100" y="95" text-anchor="middle" class="label">EC2 Instance</text>
+  <text x="100" y="112" text-anchor="middle" class="small">AWS/EC2 CPUUtilization</text>
+
+  <rect x="260" y="40" width="180" height="100" class="box" />
+  <text x="350" y="75" text-anchor="middle" class="label">CloudWatch Alarm</text>
+  <text x="350" y="95" text-anchor="middle" class="small">>= 80% for 5 min</text>
+
+  <rect x="520" y="60" width="200" height="60" class="box" />
+  <text x="620" y="95" text-anchor="middle" class="label">SNS Topic</text>
+  <text x="620" y="112" text-anchor="middle" class="small">ec2-cpu-alerts</text>
+
+  <line x1="180" y1="90" x2="260" y2="90" class="arrow" />
+  <line x1="440" y1="90" x2="520" y2="90" class="arrow" />
+
+  <rect x="620" y="150" width="160" height="40" class="box" />
+  <text x="700" y="176" text-anchor="middle" class="small">Email Subscriber</text>
+  <line x1="620" y1="120" x2="700" y2="150" class="arrow" />
+</svg>
